@@ -1,0 +1,33 @@
+# Rust
+target/
+**/*.rs.bk
+Cargo.lock
+
+# Node
+node_modules/
+.next/
+out/
+dist/
+*.log
+.env.local
+.env*.local
+
+# IDE
+# .vscode/  # Keep VS Code settings for rust-analyzer configuration
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+*.wasm
+*.wasm.hash
+
+# Environment
+.env
+
+

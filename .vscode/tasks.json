@@ -1,0 +1,46 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "cargo: build",
+      "type": "cargo",
+      "command": "build",
+      "args": [
+        "--workspace"
+      ],
+      "problemMatcher": [
+        "$rustc"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "cargo: test",
+      "type": "cargo",
+      "command": "test",
+      "args": [
+        "--workspace",
+        "--",
+        "--nocapture"
+      ],
+      "problemMatcher": [
+        "$rustc"
+      ],
+      "group": "test"
+    },
+    {
+      "label": "cargo: check",
+      "type": "cargo",
+      "command": "check",
+      "args": [
+        "--workspace"
+      ],
+      "problemMatcher": [
+        "$rustc"
+      ]
+    }
+  ]
+}
+
